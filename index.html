@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+﻿<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Game Of Life</title>
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<div class = "settings area">
+			<fieldset>
+				<legend>Настройки</legend>
+					<div class = "half-width">
+						<label for = "width">Ширина</label>
+						<input type = "text" id = "width" name = "width" value = "10">
+					</div>
+					<div class = "half-width">
+						<label for = "height">Высота</label>
+						<input type = "text" id = "height" name = "height" value = "10">
+					</div>
+					<div class = "half-width">
+						<label for = "isRandom">Случайное заполнение</label>
+						<input type = "checkbox" id = "isRandom" name = "isRandom" checked>
+					</div>
+					<div class = "half-width">
+						<button type = "button" id = "reset" onClick = "reset()">Сбросить</button>
+					</div>
+					<hr>
+					<div class = "half-width">
+						<label for = "autoStep">Автошаг</label>
+						<input type = "checkbox" id = "autoStep" name = "autoStep" onChange = "checkAutoTurn()">
+					</div>
+					<div class = "half-width">
+						<button type = "button" id = "step" onClick = "update()">Шаг</button>
+					</div>
+			</fieldset>
+		</div>
+		<script src="js/scripts.js"></script>
+	</body>
+</html>

@@ -1,0 +1,68 @@
+html, body {
+	padding: 0;
+	margin: 0;
+	color: #34495e;
+}
+
+fieldset {
+	width: 400px;
+	min-height: 100px;
+	margin: 10px 30px 20px 30px;
+	border-radius: 10px;
+	border: 1px solid #34495e;
+	box-shadow: 5px 5px 5px 0 #D9E0D9;
+}
+
+fieldset legend {
+    color: #34495e;
+	font-weight: bold;
+}
+
+.half-width {
+	width: 50%;
+	display: inline-block;
+    margin-right: -4px;
+}
+
+label {
+    display: block;
+	margin: 0 0 5px 15px;
+}
+
+input,
+button {
+    margin: 0 0 10px 15px;
+    padding: 2px 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    vertical-align: middle;
+	height: 24px;
+}
+
+button {
+	width: 100px;
+	margin-top: -15px;
+	background: #f5f5f5;
+    color: #616161;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+	transition: box-shadow 0.1s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+button:active {
+	box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.4);
+}
+
+input[type="checkbox"],
+button {
+	margin-bottom: 0px;
+}
+
+table {
+	margin: 0 45px;
+}
+
+td {
+	width: 35px;
+	height: 35px;
+}
