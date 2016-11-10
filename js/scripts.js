@@ -7,6 +7,8 @@ var tbl;
 
 var intervalID;
 
+var body = document.getElementsByTagName("body")[0];
+
 const render = () => {
   for (var i = 0; i < cellsStates.length; i++) {
     var cellState = cellsStates[i];
@@ -100,7 +102,6 @@ function cellOnClick() {
 }
 
 const reset = () => {
-  var body = document.getElementsByTagName("body");
 
   if (tbl) {
     body.removeChild(tbl);
